@@ -3,27 +3,18 @@
 -- Create tables
 CREATE TABLE IF NOT EXISTS new_cars
 (
-    Make INTEGER NOT NULL,
+    Make VARCHAR(100),
     Model VARCHAR(100),
     Year INTEGER,
-    "Engine Fuel Type" VARCHAR(100),
-    MSRP INTEGER,
+    MSRP BIGINT,
     PRIMARY KEY(Make)
 );
 
 CREATE TABLE IF NOT EXISTS used_cars
 (
-    Make INTEGER NOT NULL,
-    Model INTEGER,
+    Make VARCHAR(100),
+    Model VARCHAR(100),
     Year INTEGER,
-    "Engine Fuel Type" INTEGER,
-    MSRP INTEGER,
+    MSRP BIGINT,
     PRIMARY KEY(Make)
 );
-
--- Create FKs
-ALTER TABLE new_cars
-    ADD    FOREIGN KEY (Make)
-    REFERENCES used_cars(Make)
-    MATCH SIMPLE
-;
