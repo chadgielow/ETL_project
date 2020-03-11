@@ -3,16 +3,16 @@
 -- Create tables
 CREATE TABLE IF NOT EXISTS new_cars
 (
-    Make INTEGER NOT NULL,
+    Make VARCHAR(100),
     Model VARCHAR(100),
     Year INTEGER,
-    MSRP INTEGER
+    MSRP BIGINT
 );
 
 CREATE TABLE IF NOT EXISTS used_cars
 (
-    Make INTEGER NOT NULL,
-    Model INTEGER,
+    Make VARCHAR(100),
+    Model VARCHAR(100),
     Year INTEGER,
-    MSRP INTEGER
+    MSRP BIGINT
 );
