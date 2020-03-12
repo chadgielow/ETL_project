@@ -15,7 +15,7 @@ EXTRACTION
 
 TRANSFORMATION
 	
-	Cleaning the data first required us opening the CSV Files in Jupyter Notebook books. 
+	Cleaning the data first required us opening the CSV Files in Jupyter Notebook books. From there we wrote several lines of code that would transform the data into a format that allowed for us to create a SQL database that would allow for us to load and query the information.
 
 	Used Car Data: Dropped Columns, Rename Columns & export as a new CSV 
 	New Car Data: Sorting Data, Dropping Columns 
